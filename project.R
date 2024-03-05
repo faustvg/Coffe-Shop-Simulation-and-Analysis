@@ -8,7 +8,7 @@ sheet_names <- excel_sheets(data)
 # Sheets
 sheets <- c("Original_Simulation_2", "Original_Simulation_1", "Modified_Simulation_2", "Modified_Simulation_1")
 
-# Read each sheet into separate variables with the sheets names
+
 for (i in seq_along(sheet_names)) {
         assign(sheets[i], read_excel(data, sheet = sheet_names[i]))
 }
